@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install system dependencies (if any)
 # (Optional: e.g., if you need specific system libs, you can install them here)
-# RUN apt-get update && apt-get install -y ... 
+RUN apt-get update && apt-get install -y unzip curl
 
 # Copy dependency list and install them
 COPY requirements.txt .
